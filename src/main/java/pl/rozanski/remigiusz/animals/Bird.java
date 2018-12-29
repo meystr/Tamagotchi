@@ -2,11 +2,12 @@ package pl.rozanski.remigiusz.animals;
 
 import pl.rozanski.remigiusz.food.Food;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class Bird extends Animal{
+public class Bird extends Animal {
     private String name;
-    private List<Food> birdFoodList;
+    private List<Food> birdFoodList = new ArrayList<Food>();
 
     public Bird(String name) {
         this.name = name;
@@ -30,7 +31,6 @@ public class Bird extends Animal{
 
     @Override
     public String toString() {
-        return "My name is: " + name
-                + "I have in the fridge:" + birdFoodList;
+        return "Bird: " + name;
     }
 }

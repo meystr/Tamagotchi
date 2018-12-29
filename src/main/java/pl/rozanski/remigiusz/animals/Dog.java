@@ -2,12 +2,13 @@ package pl.rozanski.remigiusz.animals;
 
 import pl.rozanski.remigiusz.food.Food;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Dog extends Animal {
 
     private String name;
-    private List<Food> dogFoodList;
+    private List<Food> dogFoodList = new ArrayList<Food>();
 
     public void setDogFoodList(List<Food> dogFoodList) {
         this.dogFoodList = dogFoodList;
@@ -31,8 +32,7 @@ public class Dog extends Animal {
 
     @Override
     public String toString() {
-        return "My name is: " + name
-                + "I have in the fridge:" + dogFoodList;
+        return "Dog: " + name;
     }
 
 }

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Dog extends Animal {
 
-    private String name = "Max";
+    private String name;
     private List<Food> dogFoodList;
 
     public void setDogFoodList(List<Food> dogFoodList) {

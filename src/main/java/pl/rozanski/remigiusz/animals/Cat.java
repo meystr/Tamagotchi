@@ -5,7 +5,7 @@ import pl.rozanski.remigiusz.food.Food;
 import java.util.List;
 
 public class Cat extends Animal {
-    private String name = "Tiger";
+    private String name;
     private List<Food> catFoodList;
 
     public Cat(String name) {

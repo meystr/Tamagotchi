@@ -5,7 +5,7 @@ import pl.rozanski.remigiusz.food.Food;
 import java.util.List;
 
 public class Bird extends Animal{
-    private String name = "Abu";
+    private String name;
     private List<Food> birdFoodList;
 
     public Bird(String name) {

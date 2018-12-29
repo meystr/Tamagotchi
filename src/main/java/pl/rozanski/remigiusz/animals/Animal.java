@@ -3,7 +3,7 @@ package pl.rozanski.remigiusz.animals;
 import pl.rozanski.remigiusz.foodContainers.Fridge;
 
 public abstract class Animal {
-    String name;
+    private String name;
     private Fridge fridge;
 
     abstract public String giveVoice();

@@ -24,6 +24,10 @@ public class Fridge {
         }
     }
 
+    public List<Food.FoodType> getFoodList() {
+        return foodList;
+    }
+
     @Override
     public String toString() {
         return String.valueOf(foodList);

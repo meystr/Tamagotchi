@@ -20,11 +20,12 @@ public class Person {
     }
 
     public void feed() {
-        int i = 0;
         System.out.println("Feed time");
-        System.out.println("Choice one item from your fridge: ");
+        System.out.println("Choice one item from your fridge: " + "( from 0 to " + (hunger.getFoodList().size() - 1) + ")");
         hunger.showFoodList();
         Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
+        
     }
 
     public void addAnimals(Animal animal) {

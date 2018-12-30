@@ -6,6 +6,7 @@ import pl.rozanski.remigiusz.foodContainers.Fridge;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Person {
 
@@ -18,8 +19,12 @@ public class Person {
         this.name = name;
     }
 
-    public void feed(){
-        System.out.println(hunger);
+    public void feed() {
+        int i = 0;
+        System.out.println("Feed time");
+        System.out.println("Choice one item from your fridge: ");
+        hunger.showFoodList();
+        Scanner scanner = new Scanner(System.in);
     }
 
     public void addAnimals(Animal animal) {

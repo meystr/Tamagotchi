@@ -37,6 +37,7 @@ public class Main {
         person.addAnimals(fish);
         person.addAnimals(bird);
 
+        
         person.addFoodToFridge(fridge);
         System.out.println(person);
         cat.setFoodList();

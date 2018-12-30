@@ -7,14 +7,12 @@ import pl.rozanski.remigiusz.foodContainers.Fridge;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class Person {
 
     private String name;
     private List<Animal> animalList = new ArrayList<Animal>();
     private List<Food.FoodType> foodList = new ArrayList<Food.FoodType>();
     private Fridge hunger;
-
 
     public Person(String name) {
         this.name = name;

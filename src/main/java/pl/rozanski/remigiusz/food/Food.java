@@ -35,9 +35,5 @@ public class Food {
             return food;
         }
     }
-
-    @Override
-    public String toString() {
-        return "foodType=" + foodType + '}';
-    }
+    
 }

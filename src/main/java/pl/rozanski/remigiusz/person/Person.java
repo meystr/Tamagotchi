@@ -20,12 +20,16 @@ public class Person {
         this.name = name;
     }
 
+    public void feed(){
+        System.out.println(hunger);
+    }
+
     public void addAnimals(Animal animal) {
         animalList.add(animal);
     }
 
-    public void addFood(Fridge hunger) {
-        this.hunger = hunger;
+    public void addFoodToFridge(Fridge fridge) {
+        this.hunger = fridge;
     }
 
     @Override

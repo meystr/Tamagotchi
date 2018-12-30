@@ -7,14 +7,18 @@ import java.util.List;
 
 public class Cat extends Animal {
     private String name;
-    private List<Food> catFoodList = new ArrayList<Food>();
+    private List<Food.FoodType> catFoodList = new ArrayList<Food.FoodType>();
 
     public Cat(String name) {
         this.name = name;
     }
 
-    public void setFoodList(List<Food> catFoodList) {
-        this.catFoodList = catFoodList;
+    public void setFoodList() {
+        this.catFoodList.add(Food.FoodType.Ham);
+        this.catFoodList.add(Food.FoodType.Bacon);
+        this.catFoodList.add(Food.FoodType.Milk);
+        this.catFoodList.add(Food.FoodType.Water);
+        this.catFoodList.add(Food.FoodType.Sausage);
     }
 
     @Override
@@ -34,6 +38,6 @@ public class Cat extends Animal {
 
     @Override
     public String toString() {
-        return "Cat: " + name;
+        return "Cat: " + name + ", " + "I can eat:" + catFoodList;
     }
 }

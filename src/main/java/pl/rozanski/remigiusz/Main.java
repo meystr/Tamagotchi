@@ -37,10 +37,16 @@ public class Main {
         person.addAnimals(fish);
         person.addAnimals(bird);
 
-        person.addFood(fridge);
+        person.addFoodToFridge(fridge);
         System.out.println(person);
-        fridge.removeFood(Food.FoodType.Bacon);
-        
+        cat.setFoodList();
+        System.out.println(cat);
+        dog.setDogFoodList();
+        System.out.println(dog);
+        fish.setFishFoodList();
+        System.out.println(fish);
+        bird.setBirdFoodList();
+        System.out.println(bird);
 
     }
 }

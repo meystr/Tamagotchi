@@ -7,14 +7,16 @@ import java.util.List;
 
 public class Bird extends Animal {
     private String name;
-    private List<Food> birdFoodList = new ArrayList<Food>();
+    private List<Food.FoodType> birdFoodList = new ArrayList<Food.FoodType>();
 
     public Bird(String name) {
         this.name = name;
     }
 
-    public void setBirdFoodList(List<Food> birdFoodList) {
-        this.birdFoodList = birdFoodList;
+    public void setBirdFoodList() {
+        birdFoodList.add(Food.FoodType.Chesse);
+        birdFoodList.add(Food.FoodType.Bread);
+        birdFoodList.add(Food.FoodType.CottageCheese);
     }
 
     public String giveVoice() {
@@ -31,6 +33,6 @@ public class Bird extends Animal {
 
     @Override
     public String toString() {
-        return "Bird: " + name;
+        return "Bird: " + name + ", " + "I can eat:" + birdFoodList;
     }
 }

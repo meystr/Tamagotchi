@@ -8,10 +8,15 @@ import java.util.List;
 public class Dog extends Animal {
 
     private String name;
-    private List<Food> dogFoodList = new ArrayList<Food>();
+    private List<Food.FoodType> dogFoodList = new ArrayList<Food.FoodType>();
 
-    public void setDogFoodList(List<Food> dogFoodList) {
-        this.dogFoodList = dogFoodList;
+    public void setDogFoodList() {
+        dogFoodList.add(Food.FoodType.Sausage);
+        dogFoodList.add(Food.FoodType.Water);
+        dogFoodList.add(Food.FoodType.Bread);
+        dogFoodList.add(Food.FoodType.Ham);
+        dogFoodList.add(Food.FoodType.Fish);
+        dogFoodList.add(Food.FoodType.Bacon);
     }
 
     public String giveVoice() {
@@ -32,7 +37,7 @@ public class Dog extends Animal {
 
     @Override
     public String toString() {
-        return "Dog: " + name;
+        return "Dog: " + name + ", " + "I can eat:" + dogFoodList;
     }
 
 }

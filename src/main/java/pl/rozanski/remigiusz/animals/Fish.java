@@ -7,14 +7,14 @@ import java.util.List;
 
 public class Fish extends Animal {
     private String name;
-    private List<Food> fishFoodList = new ArrayList<Food>();
+    private List<Food.FoodType> fishFoodList = new ArrayList<Food.FoodType>();
 
     public Fish(String name) {
         this.name = name;
     }
 
-    public void setFishFoodList(List<Food> fishFoodList) {
-        this.fishFoodList = fishFoodList;
+    public void setFishFoodList() {
+        fishFoodList.add(Food.FoodType.Bread);
     }
 
     public String giveVoice() {
@@ -31,6 +31,6 @@ public class Fish extends Animal {
 
     @Override
     public String toString() {
-        return "Fish: " + name;
+        return "Fish: " + name + ", " + "I can eat:" + fishFoodList;
     }
 }

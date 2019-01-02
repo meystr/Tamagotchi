@@ -20,12 +20,20 @@ public class Person {
     }
 
     public void feed() {
-        System.out.println("Feed time");
-        System.out.println("Choice one item from your fridge: " + "( from 0 to " + (hunger.getFoodList().size() - 1) + ")");
-        hunger.showFoodList();
         Scanner scanner = new Scanner(System.in);
-        scanner.nextLine();
-        
+        int choice;
+        System.out.println("Feed time");
+        do {
+            System.out.println("Choice one item from your fridge: " + "( from 0 to " + (hunger.getFoodList().size() - 1) + ")");
+            System.out.println("Press @ to break feed.");
+            hunger.showFoodList();
+            choice = scanner.nextInt();
+            hunger.removeFood(choice);
+            if (hunger.getFoodList().size() == 0){
+                System.out.println("Your fridge is empty!!!");
+                break;
+            }
+        } while (choice != '@' || hunger.getFoodList().size() != 0);
     }
 
     public void addAnimals(Animal animal) {

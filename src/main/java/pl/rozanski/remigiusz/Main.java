@@ -47,8 +47,7 @@ public class Main {
         System.out.println(fish);
         bird.setBirdFoodList();
         System.out.println(bird);
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+
         person.feed();
     }
 }

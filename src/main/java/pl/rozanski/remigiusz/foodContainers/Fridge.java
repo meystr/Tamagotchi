@@ -18,6 +18,10 @@ public class Fridge {
         foodList.remove(food);
     }
 
+    public void removeFood(int food) {
+            foodList.remove(food);
+    }
+
     public void showFoodList() {
         for (int i = 0; i < foodList.size(); i++) {
             System.out.println(foodList.get(i) + " = " + i);
